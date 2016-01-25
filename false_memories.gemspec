@@ -1,11 +1,11 @@
 $:.push File.expand_path("../lib", __FILE__)
 
 # Maintain your gem's version:
-require "falsememories/version"
+require "false_memories/version"
 
 # Describe your gem and declare its dependencies:
 Gem::Specification.new do |s|
-  s.name        = "falsememories"
+  s.name        = "false_memories"
   s.version     = Falsememories::VERSION
   s.authors     = ["Callum Hogg"]
   s.email       = ["bananaCypher@gmail.com"]

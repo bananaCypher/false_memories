@@ -22,6 +22,7 @@ module FalseMemories
             def acts_as_falsememories(*options)
                 cattr_accessor :falsememories
                 self.falsememories = options
+                controller_name = "#{self.to_s.tableize.capitalize}Controller"
             end
         end
     end

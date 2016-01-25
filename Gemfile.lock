@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    falsememories (0.0.1)
+    false_memories (0.0.1)
       rails (~> 4.2.5)
 
 GEM
@@ -104,7 +104,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  falsememories!
+  false_memories!
   sqlite3
 
 BUNDLED WITH
