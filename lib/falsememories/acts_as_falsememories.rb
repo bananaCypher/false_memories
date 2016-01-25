@@ -5,13 +5,17 @@ module FalseMemories
         included do
         end
 
-        def false_json 
+        def json_memories 
+            self.memories.to_json
+        end
+
+        def memories
             data = {}
             self.falsememories.each do |memory_key|
                 property = eval "self.#{memory_key}" 
                 data[memory_key] = property
             end
-            data.to_json
+            return data
         end
 
         module ClassMethods

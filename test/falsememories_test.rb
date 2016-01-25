@@ -1,7 +1,7 @@
 require 'test_helper'
 
 class FalseMemoriesTest < ActiveSupport::TestCase
-    def test_false_json_returns_json_object_with_only_allowed_data
+    def test_json_memories_returns_json_object_with_only_allowed_data
         article = Article.first
         puts Article.all
         test = { 
@@ -10,6 +10,6 @@ class FalseMemoriesTest < ActiveSupport::TestCase
             created_at: article.created_at,
             updated_at: article.updated_at,
         }.to_json
-        assert_equal test, article.false_json
+        assert_equal test, article.json_memories
     end
 end
