@@ -13,3 +13,5 @@ gemspec
 # To use a debugger
 # gem 'byebug', group: [:development, :test]
 
+# Demo install
+# gem "false_memories", '0.0.1', :git => "git://github.com/bananaCypher/false_memories.git", :branch => 'master'
