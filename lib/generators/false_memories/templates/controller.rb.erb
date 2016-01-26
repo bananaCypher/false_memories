@@ -1,7 +1,7 @@
 module FalseMemories
-    class <%= controller_name %> < ApplicationController
+    class <%= @controller_name %> < ApplicationController
         def memories
-            item = <%= model_name.capitalize %>.find(params[:id])
+            item = <%= @model %>.find(params[:id])
             render json: item.memories
         end
     end
