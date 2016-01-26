@@ -18,13 +18,13 @@ class FalseMemoriesGenerator < Rails::Generators::Base
 
     
     private
-    def create_controller
+    def create_controller(model)
         @controller_name = controller_name(model)
         @model = model.to_s
         template "controller.rb.erb", "app/controllers/false_memories/#{controller_name.underscore}.rb"
     end
 
-    def create_routes
+    def create_routes(model)
         @route_reference = route_reference(model)
         route "get '#{@route_reference}/:id/memories' => 'false_memories/#{@route_reference}#memories'"
     end
