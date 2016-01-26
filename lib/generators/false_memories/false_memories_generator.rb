@@ -21,7 +21,7 @@ class FalseMemoriesGenerator < Rails::Generators::Base
     def create_controller(model)
         @controller_name = controller_name(model)
         @model = model.to_s
-        template "controller.rb.erb", "app/controllers/false_memories/#{controller_name.underscore}.rb"
+        template "controller.rb.erb", "app/controllers/false_memories/#{@controller_name.underscore}.rb"
     end
 
     def create_routes(model)
